@@ -1,6 +1,6 @@
 
 class Palindrome:
-    def check_palindrome(input_string):
+    def check_palindrome(self, input_string):
         is_palindrome = True
         palindrome_size = len(input_string)-1
         for i in range(len(input_string)):
@@ -8,5 +8,3 @@ class Palindrome:
                 is_palindrome = False
 
         return is_palindrome
-
-    print(check_palindrome('a'))
