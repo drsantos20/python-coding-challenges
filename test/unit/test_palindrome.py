@@ -15,3 +15,8 @@ class TestPalindrome(unittest.TestCase):
         self.assertFalse(self.palindrome.check_palindrome('ab'))
         self.assertFalse(self.palindrome.check_palindrome('aaxbcaa'))
         self.assertFalse(self.palindrome.check_palindrome('aabcaabc'))
+
+
+if __name__ == '__main__':
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestPalindrome)
+    unittest.TextTestRunner(verbosity=2).run(suite)
