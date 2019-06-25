@@ -15,3 +15,8 @@ class TestLargestPair(unittest.TestCase):
         self.assertEqual(6, self.largest_pair.adjacent_elements_product([1, 2, 3, 0]))
         self.assertEqual(50, self.largest_pair.adjacent_elements_product([9, 5, 10, 2, 24, -1, -48]))
         self.assertEqual(-12, self.largest_pair.adjacent_elements_product([-23, 4, -3, 8, -12]))
+
+
+if __name__ == '__main__':
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestLargestPair)
+    unittest.TextTestRunner(verbosity=2).run(suite)

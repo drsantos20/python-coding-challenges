@@ -12,3 +12,8 @@ class TestTimeConvert(unittest.TestCase):
         self.assertEqual('2:6', self.time_convert.time_convert(num=126))
         self.assertEqual('0:45', self.time_convert.time_convert(num=45))
         self.assertEqual('1:0', self.time_convert.time_convert(num=60))
+
+
+if __name__ == '__main__':
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestTimeConvert)
+    unittest.TextTestRunner(verbosity=2).run(suite)

@@ -12,3 +12,8 @@ class TestLargestIncreasingSequence(unittest.TestCase):
         self.assertFalse(self.largest_increasing_sequence.almost_increasing_sequence([1, 3, 2, 1]))
         self.assertTrue(self.largest_increasing_sequence.almost_increasing_sequence([1, 3, 2]))
         self.assertFalse(self.largest_increasing_sequence.almost_increasing_sequence([40, 50, 60, 10, 20, 30]))
+
+
+if __name__ == '__main__':
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestLargestIncreasingSequence)
+    unittest.TextTestRunner(verbosity=2).run(suite)
