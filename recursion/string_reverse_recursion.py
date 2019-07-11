@@ -1,14 +1,12 @@
 
 def reverse(word):
     if len(word) == 0:
-        print(word)
         return word
     else:
-        print(word)
         return reverse(word[1:]) + word[0]
 
 
-word = 'Geeksforgeeks'
+word = 'Daniel'
 
 
 print('The original string  is : ', end='')
